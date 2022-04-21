@@ -9,7 +9,7 @@ pipeline {
         }
         stage('print out the os') {
             steps {
-                uname -a
+                echo 'second step'
             }
         }
         stage('simple third stage') {
