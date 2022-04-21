@@ -2,9 +2,19 @@ pipeline {
     agent any
 
     stages {
-        stage('Hello') {
+        stage('clone other repo') {
             steps {
                 echo 'Hello World'
+            }
+        }
+        stage('print out the os') {
+            steps {
+                uname -a
+            }
+        }
+        stage('simple third stage') {
+            steps {
+                echo 'third stage '
             }
         }
     }
